@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./sternenko.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+h3{
+    font-size:26px;
+    background:linear-gradient(to left,#5d5d5d,#ddd);
+    
+    -webkit-text-fill-color:transparent;
+  }
+  .article-item{
+    display:flex;
+    align-items:center;
+  }
+  .article-item .article-img,.article-item .article-text{
+    flex:50%;
+  }
+  .article-item:nth-child(odd){
+    flex-direction:row-reverse;
+  }
+  @media (max-width:991px){
+    .article-item,.article-item:nth-child(odd){
+      flex-direction:column-reverse;
+    }
+  }
+  @media (max-width:575px){
+    body{
+      background-color:#fff;
+      margin:0;
+    }
+    
+    h1{
+      color:#000;
+    }
+    
+    h3{
+      background: #484747;
+      
+      -webkit-text-fill-color:transparent;
+    }
+  }
 
+</style>
 </head>
 <body>
     <section id="header">
